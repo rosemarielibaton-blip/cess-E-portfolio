@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Princess Joy C. Nazareno | Field Study 1 and 2 E-Portfolio</title>
+<meta name="description" content="Field Study 1 and Field Study 2 e-portfolio, College of Innovative Learning and Teaching, Taguig City University.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#3b1021; --muted:#7a4a5a; --bg:#fff3e3; --white:#fffdf9;
+  --red:#e8334f; --red-d:#b5163a; --red-l:#ff6b81;
+  --gold:#ffc43d; --gold-l:#ffe08a; --gold-pale:#fff2c4;
+  --teal:#35d0c0; --violet:#b39dff; --sky:#5ccfff; --pink:#ff9fb8; --orange:#ffa94d; --green:#8be28b;
+  --clay:10px 10px 24px rgba(150,50,70,.18), -8px -8px 18px rgba(255,255,255,.95), inset 6px 6px 10px rgba(255,255,255,.6), inset -6px -6px 12px rgba(150,50,70,.09);
+  --clay-sm:6px 6px 14px rgba(150,50,70,.16), -5px -5px 12px rgba(255,255,255,.95), inset 3px 3px 6px rgba(255,255,255,.55), inset -3px -3px 7px rgba(150,50,70,.08);
+  --display:"Baloo 2","Trebuchet MS","Segoe UI",system-ui,sans-serif;
+  --body:"Nunito","Segoe UI",Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:96px}
+body{margin:0;color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.65;
+  background:
+   radial-gradient(520px 420px at 6% 4%,rgba(255,196,61,.40),transparent 70%),
+   radial-gradient(560px 460px at 96% 12%,rgba(255,107,129,.32),transparent 70%),
+   radial-gradient(600px 500px at 4% 62%,rgba(92,207,255,.26),transparent 70%),
+   radial-gradient(560px 480px at 98% 84%,rgba(179,157,255,.30),transparent 70%),
+   var(--bg);
+  background-attachment:fixed}
+a{color:var(--red-d);text-underline-offset:3px}
+a:hover{color:var(--red)}
+:focus-visible{outline:4px solid var(--violet);outline-offset:3px;border-radius:12px}
+img{max-width:100%;display:block}
+code{background:var(--gold-pale);padding:2px 8px;border-radius:8px}
+
+/* Navigation */
+.nav{position:sticky;top:12px;z-index:30;margin:12px auto 0;max-width:1080px;width:calc(100% - 24px);border-radius:999px;background:rgba(255,253,249,.88);backdrop-filter:blur(8px);box-shadow:var(--clay-sm)}
+.nav ul{list-style:none;margin:0;padding:6px 10px;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.nav ul::-webkit-scrollbar{display:none}
+.nav a{display:block;padding:9px 16px;border-radius:999px;color:var(--ink);text-decoration:none;font-weight:800;font-size:15px;white-space:nowrap}
+.nav a:hover{background:var(--gold);color:var(--ink)}
+
+/* Hero */
+.hero{max-width:1080px;margin:0 auto;padding:44px 20px 24px;display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center}
+.logos{display:flex;gap:14px;margin-bottom:14px}
+.logos img{height:64px;width:auto;border-radius:50%;background:#fff;box-shadow:var(--clay-sm);padding:4px}
+.eyebrow{display:inline-block;background:var(--gold);color:var(--ink);font-weight:800;font-size:14px;letter-spacing:.04em;padding:6px 16px;border-radius:999px;box-shadow:var(--clay-sm);margin:0 0 14px}
+.hero h1{font-family:var(--display);font-weight:800;font-size:clamp(40px,7vw,72px);line-height:1.02;margin:0 0 14px;color:var(--red-d)}
+.hero h1 span{background:linear-gradient(transparent 58%,var(--gold) 58%);padding:0 6px}
+.hero .lead{font-size:20px;max-width:34ch;margin:0 0 22px}
+.hero .who{font-weight:800;margin:0 0 24px}
+.hero .who small{display:block;font-weight:600;color:var(--muted)}
+.cta{display:flex;flex-wrap:wrap;gap:14px}
+.btn{display:inline-block;font-family:var(--display);font-weight:700;font-size:19px;text-decoration:none;color:#fff;padding:12px 28px;border-radius:999px;background:linear-gradient(145deg,#ff5a73,var(--red-d));box-shadow:var(--clay-sm);transition:transform .15s}
+.btn:hover{color:#fff;transform:translateY(-3px)}
+.btn:active{transform:translateY(1px)}
+.btn-gold{background:linear-gradient(145deg,#ffd666,var(--gold));color:var(--ink)}
+.btn-gold:hover{color:var(--ink)}
+.btn-alt{background:var(--white);color:var(--red-d);margin-left:8px}
+.btn-alt:hover{color:var(--red)}
+.stack{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.stat{border-radius:30px;padding:20px 16px;text-align:center;box-shadow:var(--clay);animation:bob 5s ease-in-out infinite}
+.stat:nth-child(2){animation-delay:-1.2s;margin-top:22px}
+.stat:nth-child(3){animation-delay:-2.4s;margin-top:-6px}
+.stat:nth-child(4){animation-delay:-3.6s;margin-top:16px}
+.stat b{display:block;font-family:var(--display);font-size:clamp(38px,6vw,54px);line-height:1}
+.stat span{font-weight:800;font-size:15px}
+.s1{background:var(--red-l)}.s2{background:var(--gold)}.s3{background:var(--teal)}.s4{background:var(--violet)}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+
+main{max-width:1080px;margin:0 auto;padding:0 20px 40px}
+section{padding:56px 0 8px}
+.sec-head{display:flex;align-items:center;gap:16px;margin-bottom:26px}
+.sec-no{flex:none;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:var(--gold);box-shadow:var(--clay-sm);font-family:var(--display);font-weight:800;font-size:28px;color:var(--ink)}
+h2{font-family:var(--display);font-weight:800;font-size:clamp(30px,5vw,46px);line-height:1.1;margin:0;color:var(--red-d)}
+h3{font-family:var(--display);font-weight:700;font-size:28px;line-height:1.15;margin:34px 0 12px;color:var(--ink)}
+h4{font-family:var(--display);font-size:19px;font-weight:700;margin:0 0 6px;color:var(--red-d)}
+p{margin:0 0 14px;max-width:70ch}
+ul{margin:0 0 14px;padding-left:22px}
+.fill{background:linear-gradient(transparent 55%,rgba(255,196,61,.55) 55%);border-radius:4px}
+
+/* Clay cards */
+.card,.clay{background:var(--white);border-radius:28px;padding:24px 26px;box-shadow:var(--clay);margin-bottom:22px}
+.card h3{margin-top:0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.grid2 .card:nth-child(1){background:#ffe3e8}
+.grid2 .card:nth-child(2){background:#dff7f3}
+.field{margin-bottom:18px}
+.reflection{background:var(--gold-pale);border-radius:22px;padding:16px 20px;box-shadow:inset 4px 4px 10px rgba(255,255,255,.7), inset -4px -4px 10px rgba(180,120,0,.12)}
+.reflection h4{color:var(--ink)}
+.reflection p{margin:0}
+
+/* Journey catalog */
+.catalog{padding-top:36px}
+.catalog h2{margin-bottom:6px}
+.catalog .sub{margin-bottom:24px;font-size:18px}
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
+.cat{display:block;text-decoration:none;color:var(--ink);border-radius:30px;padding:22px 22px 20px;box-shadow:var(--clay);transition:transform .18s}
+.cat:hover{transform:translateY(-6px) rotate(-.6deg);color:var(--ink)}
+.cat .ic{display:grid;place-items:center;width:54px;height:54px;border-radius:18px;background:rgba(255,255,255,.7);box-shadow:var(--clay-sm);font-size:28px;margin-bottom:12px}
+.cat b{display:block;font-family:var(--display);font-size:22px;line-height:1.15}
+.cat span{display:block;font-size:15px;font-weight:600;margin-top:4px}
+.cat em{display:inline-block;margin-top:10px;font-style:normal;font-weight:800;font-size:14px;background:rgba(255,255,255,.75);padding:3px 12px;border-radius:999px}
+.k1{background:var(--red-l)}.k2{background:var(--gold)}.k3{background:var(--teal)}.k4{background:var(--violet)}
+.k5{background:var(--sky)}.k6{background:var(--pink)}.k7{background:var(--orange)}.k8{background:var(--green)}
+
+/* Profile */
+.profile{display:grid;grid-template-columns:260px 1fr;gap:32px;align-items:start}
+.portrait{aspect-ratio:3/4;border-radius:36px;border:7px solid var(--white);box-shadow:var(--clay);background:var(--gold-pale);overflow:hidden;position:relative}
+.portrait img{width:100%;height:100%;object-fit:cover}
+.portrait.missing::after{content:attr(data-ph);position:absolute;inset:0;display:grid;place-items:center;padding:16px;text-align:center;font-size:14px;color:var(--muted)}
+.portrait.missing img{display:none}
+.facts{margin:0;background:var(--white);border-radius:28px;padding:10px 24px;box-shadow:var(--clay)}
+.facts div{display:grid;grid-template-columns:170px 1fr;gap:12px;padding:11px 0;border-bottom:2px dashed var(--gold-l)}
+.facts div:last-child{border-bottom:0}
+.facts dt{font-weight:800;color:var(--red-d)}
+.facts dd{margin:0}
+.cv-frame{width:100%;height:680px;border:0;border-radius:28px;box-shadow:var(--clay);background:#fff;margin-top:14px}
+
+/* Photos */
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.shots.dense{grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:14px}
+.shot{margin:0;background:var(--white);border-radius:22px;overflow:hidden;box-shadow:var(--clay-sm)}
+.shot img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.shot figcaption{padding:8px 12px;font-size:14.5px;color:var(--muted)}
+.shot a{display:block}
+.shot.missing img{display:none}
+.shot.missing::before{content:attr(data-ph);display:grid;place-items:center;aspect-ratio:4/3;padding:16px;text-align:center;font-size:14px;color:var(--muted);background:var(--gold-pale)}
+.certs{grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.certs .shot img{object-fit:contain;background:#fff}
+.day{display:inline-block;font-family:var(--display);font-weight:700;font-size:19px;background:var(--gold);color:var(--ink);padding:4px 18px;border-radius:999px;box-shadow:var(--clay-sm);margin:24px 0 14px}
+
+/* Progress demo */
+.progress{background:linear-gradient(145deg,#fff,#fff6e6);margin:6px 0 28px}
+.progress h3{margin-top:0}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
+.chip{font-weight:800;font-size:14.5px;padding:6px 14px;border-radius:999px;box-shadow:var(--clay-sm)}
+.bars{display:grid;gap:12px}
+.bar-row{display:grid;grid-template-columns:92px 1fr 86px;gap:12px;align-items:center;text-decoration:none;color:var(--ink)}
+.bar-row:hover .track{box-shadow:inset 3px 3px 7px rgba(150,50,70,.22), 0 0 0 3px var(--gold)}
+.bar-row b{font-family:var(--display);font-size:18px}
+.track{height:24px;border-radius:999px;background:#f3e4d3;box-shadow:inset 3px 3px 7px rgba(150,50,70,.18), inset -2px -2px 5px rgba(255,255,255,.8);overflow:hidden}
+.fillbar{display:block;height:100%;width:var(--w);border-radius:999px;background:linear-gradient(90deg,var(--gold),var(--red-l));box-shadow:inset 2px 2px 5px rgba(255,255,255,.6);animation:grow 1.2s ease-out both}
+.bar-row small{font-weight:800;color:var(--muted);text-align:right}
+@keyframes grow{from{width:0}}
+
+/* Weekly entries */
+details.week{background:var(--white);border-radius:28px;box-shadow:var(--clay);margin-bottom:18px;overflow:hidden}
+details.week summary{cursor:pointer;list-style:none;display:flex;gap:16px;align-items:center;padding:16px 24px}
+details.week summary::-webkit-details-marker{display:none}
+details.week summary::after{content:"+";margin-left:auto;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:var(--gold);box-shadow:var(--clay-sm);font-size:24px;font-weight:800;line-height:1;color:var(--ink)}
+details.week[open] summary::after{content:"\2212"}
+details.week[open] summary{background:linear-gradient(145deg,#ff5a73,var(--red-d));color:#fff}
+.wk-n{font-family:var(--display);font-weight:800;font-size:26px;color:var(--red-d)}
+details.week[open] .wk-n{color:var(--gold-l)}
+.wk-d{font-weight:700}
+.week-body{padding:24px 26px 10px}
+.evidence a{word-break:break-word}
+
+/* Activities */
+.entry{background:var(--white);border-radius:28px;box-shadow:var(--clay);padding:8px 28px 22px;margin-bottom:24px;border-top:10px solid var(--violet)}
+.entry:nth-of-type(2){border-top-color:var(--teal)}
+.entry:nth-of-type(3){border-top-color:var(--orange)}
+.entry h3{margin-top:18px}
+.meta{margin:0 0 16px}
+.meta div{display:flex;gap:12px}
+.meta dt{font-weight:800;color:var(--red-d)}
+.meta dd{margin:0}
+
+/* Action plan */
+.table-wrap{overflow-x:auto;border-radius:28px;box-shadow:var(--clay);background:var(--white)}
+table{border-collapse:collapse;width:100%;min-width:640px}
+th{background:linear-gradient(145deg,#ff5a73,var(--red-d));color:#fff;text-align:left;padding:14px 16px;font-family:var(--display);font-size:18px}
+td{padding:14px 16px;border-top:2px dashed var(--gold-l);vertical-align:top}
+
+/* Appendices */
+.docs{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.docs a{display:block;background:var(--white);border-radius:22px;box-shadow:var(--clay-sm);padding:14px 18px 14px 20px;text-decoration:none;font-weight:800;color:var(--ink);transition:transform .15s}
+.docs a::before{content:"";display:inline-block;width:12px;height:12px;border-radius:50%;background:var(--red-l);margin-right:10px}
+.docs li:nth-child(3n+2) a::before{background:var(--teal)}
+.docs li:nth-child(3n) a::before{background:var(--violet)}
+.docs a:hover{transform:translateY(-4px)}
+.docs small{display:block;color:var(--muted);font-weight:600;margin-left:22px}
+
+/* Feedback and CTA */
+.quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.quote{border-radius:30px;padding:26px 24px;box-shadow:var(--clay);position:relative}
+.quote::before{content:"\201C";position:absolute;top:-8px;left:18px;font-family:var(--display);font-size:84px;line-height:1;color:rgba(255,255,255,.85)}
+.quote p{margin:22px 0 16px;font-size:18px;font-weight:600}
+.quote b{display:block;font-family:var(--display);font-size:19px}
+.quote span{font-size:15px;font-weight:700}
+.q1{background:#ffd3db}.q2{background:#c8f3ee}.q3{background:#e4dbff}
+.cta-band{margin:64px 0 0;text-align:center;border-radius:40px;padding:48px 24px;background:linear-gradient(145deg,#ff5a73,var(--red-d));color:#fff;box-shadow:var(--clay)}
+.cta-band h2{color:#fff;margin-bottom:8px}
+.cta-band p{margin:0 auto 22px;font-size:19px}
+.cta-band .cta{justify-content:center}
+.cta-band .btn{background:var(--white);color:var(--red-d)}
+.cta-band .btn-gold{background:linear-gradient(145deg,#ffd666,var(--gold));color:var(--ink)}
+.cta-band .fill{background:linear-gradient(transparent 55%,rgba(255,196,61,.55) 55%)}
+
+footer{margin-top:56px;background:linear-gradient(145deg,#5a1230,#3b0a20);color:var(--gold-l);text-align:center;padding:38px 20px;border-radius:44px 44px 0 0}
+footer strong{display:block;font-family:var(--display);font-size:28px;color:#fff}
+footer p{margin:6px auto;max-width:none}
+footer a{color:var(--gold)}
+
+@media (max-width:820px){
+  .hero{grid-template-columns:1fr;padding-top:32px}
+  .stack{max-width:420px}
+  .profile{grid-template-columns:1fr}
+  .portrait{max-width:240px}
+  .grid2{grid-template-columns:1fr}
+  .facts div{grid-template-columns:1fr;gap:0}
+  .bar-row{grid-template-columns:70px 1fr 70px}
+}
+@media (max-width:520px){
+  body{font-size:16px}
+  .sec-no{width:48px;height:48px;font-size:24px}
+  .cta-band{border-radius:30px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.stat,.fillbar{animation:none}.cat,.btn,.docs a{transition:none}}
+@media print{.nav{display:none}details.week .week-body{display:block}}
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Portfolio sections">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#profile">Student Profile</a></li>
+    <li><a href="#goals">Learning Goals</a></li>
+    <li><a href="#school">Cooperating School</a></li>
+    <li><a href="#weekly">Weekly Reflections</a></li>
+    <li><a href="#activities">Professional Development</a></li>
+    <li><a href="#growth">Action Plan</a></li>
+    <li><a href="#appendices">Appendices</a></li>
+    <li><a href="#feedback">Feedback</a></li>
+  </ul>
+</nav>
+
+<header class="hero">
+  <div>
+    <div class="logos">
+      <img src="assets/tcu-seal.png" alt="Taguig City seal" data-hide>
+      <img src="assets/tcu-logo.png" alt="Taguig City University logo" data-hide>
+    </div>
+    <p class="eyebrow">Field Study 1 &amp; 2 E-Portfolio</p>
+    <h1>My <span>teaching</span> journey</h1>
+    <p class="lead">From observing classrooms to helping teach in them: a pre-service science teacher’s story, one week at a time.</p>
+    <p class="who">Princess Joy C. Nazareno<small>Bachelor of Secondary Education, Major in Science · Taguig City University, College of Innovative Learning and Teaching</small></p>
+    <div class="cta"><a class="btn" href="#journey">Start exploring</a><a class="btn btn-gold" href="#cv">View my CV</a></div>
+  </div>
+  <div class="stack" aria-label="Portfolio at a glance">
+    <div class="stat s1"><b>7</b><span>weeks documented</span></div>
+    <div class="stat s2"><b>23</b><span>field days</span></div>
+    <div class="stat s3"><b>172</b><span>classroom photos</span></div>
+    <div class="stat s4"><b>8</b><span>certificates</span></div>
+  </div>
+</header>
+
+<main>
+<section class="catalog" id="journey">
+  <h2>Explore my portfolio</h2>
+  <p class="sub">Pick a stop to jump straight to it.</p>
+  <div class="cat-grid">
+    <a class="cat k1" href="#introduction"><div class="ic" aria-hidden="true">👋</div><b>Introduction</b><span>Welcome and what’s inside</span><em>Section 1</em></a>
+    <a class="cat k2" href="#profile"><div class="ic" aria-hidden="true">🎓</div><b>Student Profile</b><span>About me, my philosophy and CV</span><em>Section 2</em></a>
+    <a class="cat k3" href="#goals"><div class="ic" aria-hidden="true">🎯</div><b>Learning Goals</b><span>What I want from FS 1 and FS 2</span><em>Section 3</em></a>
+    <a class="cat k4" href="#school"><div class="ic" aria-hidden="true">🏫</div><b>Cooperating School</b><span>Taguig National High School</span><em>Section 4</em></a>
+    <a class="cat k5" href="#weekly"><div class="ic" aria-hidden="true">📸</div><b>Weekly Reflections</b><span>Photos and lessons, Weeks 1 to 7</span><em>Section 5</em></a>
+    <a class="cat k6" href="#activities"><div class="ic" aria-hidden="true">🌟</div><b>Professional Development</b><span>Seminars, workshops and events</span><em>Section 6</em></a>
+    <a class="cat k7" href="#growth"><div class="ic" aria-hidden="true">🚀</div><b>Growth Action Plan</b><span>Where I’m headed next</span><em>Section 7</em></a>
+    <a class="cat k8" href="#appendices"><div class="ic" aria-hidden="true">📎</div><b>Appendices</b><span>Forms, records and certificates</span><em>Section 8</em></a>
+  </div>
+</section>
+
+
+<!-- 1. INTRODUCTION -->
+<section id="introduction">
+  <div class="sec-head"><span class="sec-no">1</span><h2>Introduction</h2></div>
+  <p>Welcome to my Field Study 1 and Field Study 2 E-Portfolio! This digital compilation serves as a comprehensive record of my experiential learning journey, pedagogical growth, and professional evolution as a pre-service science teacher. Housed under the College of Innovative Learning and Teaching at Taguig City University, this portfolio captures the vital bridge between educational theories learned in the classroom and their real-world applications in the dynamic learning environment of our cooperating school.</p>
+  <p>Throughout my Field Study journey, this e-portfolio documents my progression from systematic classroom observations and learner behavior analysis (FS 1) to active participation, instructional material development, and teaching assistance (FS 2). Inside these pages, you will find weekly documentations, reflective journals, instructional artifacts, and professional development milestones that reflect my commitment to fostering inquiry-based, inclusive, and engaging science education.</p>
+  <p>Ultimately, this portfolio is more than just a course requirement. It is a testament to my dedication to lifelong learning, my readiness for pre-service teaching deployment, and my aspiration to shape scientifically literate and critical-thinking minds of tomorrow.</p>
+</section>
+
+<!-- 2. STUDENT PROFILE -->
+<section id="profile">
+  <div class="sec-head"><span class="sec-no">2</span><h2>Student Profile</h2></div>
+  <div class="profile">
+    <div class="portrait" data-ph="Add professional photo: assets/profile.jpg"><img src="assets/profile.jpg" alt="Professional photo of the student" data-ph-parent></div>
+    <div>
+      <dl class="facts">
+        <div><dt>Full name</dt><dd>Princess Joy C. Nazareno</dd></div>
+        <div><dt>Student number</dt><dd>23-00542</dd></div>
+        <div><dt>Program and major</dt><dd>Bachelor of Secondary Education, Major in Science</dd></div>
+        <div><dt>Academic year</dt><dd>2026–2027</dd></div>
+        <div><dt>Course code and title</dt><dd class="fill">[Add course code and title]</dd></div>
+        <div><dt>Field study adviser</dt><dd>Joe J. Maniulit</dd></div>
+        <div><dt>Cooperating school</dt><dd>Taguig National High School</dd></div>
+        <div><dt>Cooperating teacher</dt><dd>Agape Grace D. Riveza</dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <h3>Brief Biography</h3>
+  <p>I am Princess Joy C. Nazareno, a science education major at Taguig City University. For me, teaching science isn’t just about discussing theories. It’s about turning lessons into exciting, hands-on discoveries for students. Through my Field Study journey, I am pouring my heart into learning how to design engaging lessons, connect with learners, and grow into the kind of compassionate and inspiring educator I’ve always aspired to be.</p>
+
+  <h3>Personal Educational Philosophy</h3>
+  <p>My educational philosophy is rooted in nurturing natural curiosity through science and instilling valuable life lessons. I believe that every student possesses unique potential that requires patient guidance and encouragement. As their teacher, it is my responsibility to inspire them, steer them toward the right path, and remind them that education is a continuous journey of growth and personal excellence.</p>
+
+  <h3>Career Objectives</h3>
+  <p>To successfully pass the Licensure Examination for Teachers (LET) and earn my professional license, marking the true beginning of my journey as an educator. My objective is to go beyond traditional textbook lessons by imparting meaningful life lessons, serving as a positive role model, and guiding my students along a pathway of continuous growth, self-improvement, and holistic success.</p>
+
+  <h3 id="cv">Curriculum Vitae</h3>
+  <p>
+    <a class="btn" href="https://drive.google.com/file/d/1WRsPFccnd29Hj1q-aVOppBoPZiw7UoGM/view" target="_blank" rel="noopener">Open my Curriculum Vitae (PDF)</a>
+    <a class="btn btn-alt" href="https://drive.google.com/uc?export=download&amp;id=1WRsPFccnd29Hj1q-aVOppBoPZiw7UoGM">Download</a>
+  </p>
+  <iframe class="cv-frame" src="https://drive.google.com/file/d/1WRsPFccnd29Hj1q-aVOppBoPZiw7UoGM/preview" title="Curriculum Vitae of Princess Joy C. Nazareno" loading="lazy"></iframe>
+</section>
+
+<!-- 3. LEARNING GOALS -->
+<section id="goals">
+  <div class="sec-head"><span class="sec-no">3</span><h2>Learning Goals</h2></div>
+  <p>As I go through my Field Study 1 and Field Study 2 journey, here are my personal learning goals and expectations.</p>
+  <div class="grid2">
+    <div class="card">
+      <h3>Field Study 1</h3>
+      <p><em>Observation and Participation</em></p>
+      <h4>Goals</h4>
+      <p>I aim to immerse myself in real classroom environments, closely observe how students behave, and see firsthand how teaching theories are actually applied in live science classes.</p>
+      <h4>Expectations</h4>
+      <p>I expect to gain a realistic and deep understanding of classroom dynamics, student diversity, and the everyday environment of a secondary science classroom.</p>
+    </div>
+    <div class="card">
+      <h3>Field Study 2</h3>
+      <p><em>Participation and Teaching Assistantship</em></p>
+      <h4>Goals</h4>
+      <p>I want to put my learning into action by helping out with lesson planning, creating creative instructional materials, and trying out hands-on science teaching strategies.</p>
+      <h4>Expectations</h4>
+      <p>I expect to step out of my comfort zone, build my confidence in teaching delivery, and learn closely from my cooperating teacher’s mentorship.</p>
+    </div>
+  </div>
+  <div class="reflection">
+    <h4>Overall Personal Expectation</h4>
+    <p>Ultimately, my goal and expectation combined is to successfully bridge educational theories with real classroom practices, build solid classroom management skills, and grow into the kind of caring, effective, and inspiring science teacher my future students can truly look up to.</p>
+  </div>
+</section>
+
+<!-- 4. COOPERATING SCHOOL PROFILE -->
+<section id="school">
+  <div class="sec-head"><span class="sec-no">4</span><h2>Cooperating School Profile</h2></div>
+
+  <h3>School Profile</h3>
+  <p><strong>Taguig National High School (TNHS)</strong> is a public secondary school located along Imelda Romualdez Marcos Road, corner A. Reyes Street, Barangay New Lower Bicutan, Taguig City. It was established on January 8, 1980, and was formerly known as Fort Bonifacio College Annex before becoming Taguig Municipal High School. In 1994, it adopted its present name, Taguig National High School. The school provides secondary education and aims to support students’ academic development and personal growth.</p>
+  <p><strong>Number of students and teachers:</strong> <span class="fill">[Add the latest figures, confirmed with the school]</span></p>
+
+  <div class="grid2">
+    <div class="card"><h3>Vision</h3><p>The school profile references the Department of Education’s vision:</p><p>“We dream of Filipinos who passionately love their country and whose values and competencies enable them to realize their full potential and contribute meaningfully to building the nation.”</p></div>
+    <div class="card"><h3>Mission</h3><p>The Department of Education is committed to protecting and promoting every Filipino’s right to quality, equitable, culture-based, and complete basic education. It aims to provide a child-friendly, safe, and motivating learning environment, support teachers, and encourage families and communities to participate in education.</p></div>
+  </div>
+
+  <div class="card">
+    <h3>Core Values</h3>
+    <p>The Department of Education’s core values are:</p>
+    <ul>
+      <li><strong>Maka-Diyos</strong>: Faith in God</li>
+      <li><strong>Maka-tao</strong>: Respect for others</li>
+      <li><strong>Makakalikasan</strong>: Care for the environment</li>
+      <li><strong>Makabansa</strong>: Love for the country</li>
+    </ul>
+  </div>
+
+  <h3>Organizational Structure</h3>
+  <div class="shots">
+    <figure class="shot"><img src="assets/school/org-chart.jpg" alt="Organizational structure of the cooperating school" data-ph="Add photo: assets/school/org-chart.jpg"><figcaption>Organizational structure of Taguig National High School</figcaption></figure>
+  </div>
+
+  <h3>School Facilities</h3>
+  <p class="fill">[Describe the classrooms, library, laboratories, covered court, clinic, and other facilities you saw.]</p>
+
+  <h3>Photographs</h3>
+  <p>Photos are included only where the school gave permission.</p>
+  <div class="shots">
+    <figure class="shot"><img src="assets/school/photo-1.jpg" alt="School photo 1" data-ph="Add photo: assets/school/photo-1.jpg"><figcaption>[Caption]</figcaption></figure>
+    <figure class="shot"><img src="assets/school/photo-2.jpg" alt="School photo 2" data-ph="Add photo: assets/school/photo-2.jpg"><figcaption>[Caption]</figcaption></figure>
+    <figure class="shot"><img src="assets/school/photo-3.jpg" alt="School photo 3" data-ph="Add photo: assets/school/photo-3.jpg"><figcaption>[Caption]</figcaption></figure>
+  </div>
+</section>
+
+<!-- 5. WEEKLY DOCUMENTATION AND REFLECTION -->
+<section id="weekly">
+  <div class="sec-head"><span class="sec-no">5</span><h2>Weekly Documentation and Reflection</h2></div>
+  <p>Each week lists the date, learning objectives, my classroom observations (Field Study 1), my participation and assigned tasks (Field Study 2), learning evidences, photos with captions, and a weekly reflection. Select a week to open it.</p>
+  <div class="clay progress">
+    <h3>My field study progress</h3>
+    <div class="chips">
+      <span class="chip" style="background:var(--gold)">7 weeks documented</span>
+      <span class="chip" style="background:var(--teal)">23 field days</span>
+      <span class="chip" style="background:var(--pink)">172 photos</span>
+    </div>
+    <div class="bars"><a class="bar-row" href="#week-1"><b>Week 1</b><span class="track"><span class="fillbar" style="--w:33%"></span></span><small>13 photos</small></a><a class="bar-row" href="#week-2"><b>Week 2</b><span class="track"><span class="fillbar" style="--w:97%"></span></span><small>38 photos</small></a><a class="bar-row" href="#week-3"><b>Week 3</b><span class="track"><span class="fillbar" style="--w:26%"></span></span><small>10 photos</small></a><a class="bar-row" href="#week-4"><b>Week 4</b><span class="track"><span class="fillbar" style="--w:100%"></span></span><small>39 photos</small></a><a class="bar-row" href="#week-5"><b>Week 5</b><span class="track"><span class="fillbar" style="--w:82%"></span></span><small>32 photos</small></a><a class="bar-row" href="#week-6"><b>Week 6</b><span class="track"><span class="fillbar" style="--w:72%"></span></span><small>28 photos</small></a><a class="bar-row" href="#week-7"><b>Week 7</b><span class="track"><span class="fillbar" style="--w:31%"></span></span><small>12 photos</small></a></div>
+  </div>
+
+  
+<details class="week" id="week-1" open>
+  <summary><span class="wk-n">Week 1</span><span class="wk-d">September 16–17, 2026</span></summary>
+  <div class="week-body">
+    <div class="field"><h4>Learning Objectives</h4>
+      <ul><li class="fill">[What you aimed to learn or accomplish this week]</li><li class="fill">[Second objective]</li></ul></div>
+    <div class="field"><h4>Classroom Observations (Field Study 1)</h4>
+      <p class="fill">[Describe what you observed: teaching strategies, classroom management, learner behavior, materials used.]</p></div>
+    <div class="field"><h4>Participation and Assigned Tasks (Field Study 2)</h4>
+      <p class="fill">[Describe the tasks you were assigned and how you took part in class.]</p></div>
+    <div class="field"><h4>Learning Evidences</h4>
+      <ul class="evidence"><li><a href="assets/week-1/evidence-1.pdf">[Evidence 1: lesson plan, observation note, worksheet]</a></li><li><a href="assets/week-1/evidence-2.pdf">[Evidence 2]</a></li></ul></div>
+    <div class="field"><h4>Photo Documentation with Captions</h4>
+      <h5 class="day">Day 1 · September 16, 2026</h5><div class="shots dense"><figure class="shot"><a href="https://drive.google.com/thumbnail?id=13cQOQONKmNrrzWliwF6v4ywyg-_ZECLb&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=13cQOQONKmNrrzWliwF6v4ywyg-_ZECLb&amp;sz=w600" alt="Day 1, September 16, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1N6FGYWZ88D-j_bvyfZQ8gC7N0x_f5tFW&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1N6FGYWZ88D-j_bvyfZQ8gC7N0x_f5tFW&amp;sz=w600" alt="Day 1, September 16, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=13pZb6CAug30_MvmQehoBqzNBjEq3Sh5I&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=13pZb6CAug30_MvmQehoBqzNBjEq3Sh5I&amp;sz=w600" alt="Day 1, September 16, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=13i4OInDjoJwuAYUesa92xLm9fYz-xruB&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=13i4OInDjoJwuAYUesa92xLm9fYz-xruB&amp;sz=w600" alt="Day 1, September 16, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1_O0OT5X-NVlMP1pcJ2HcNbqgO_KAgtj4&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1_O0OT5X-NVlMP1pcJ2HcNbqgO_KAgtj4&amp;sz=w600" alt="Day 1, September 16, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1ih7x-SV0B0SR2lQq_WE5cRZLUy6ulqy3&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1ih7x-SV0B0SR2lQq_WE5cRZLUy6ulqy3&amp;sz=w600" alt="Day 1, September 16, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1cURwP_RMSElTY7idQ9_zXtO_o-sFiMYh&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1cURwP_RMSElTY7idQ9_zXtO_o-sFiMYh&amp;sz=w600" alt="Day 1, September 16, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure></div><h5 class="day">Day 2 · September 17, 2026</h5><div class="shots dense"><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1FQX_qQ7-YGpH_KzrMZ4BrNTqq2lLvoGl&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1FQX_qQ7-YGpH_KzrMZ4BrNTqq2lLvoGl&amp;sz=w600" alt="Day 2, September 17, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1qYHHJc_7MLkV-4T3RyXD1WOMC1bfbAE7&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1qYHHJc_7MLkV-4T3RyXD1WOMC1bfbAE7&amp;sz=w600" alt="Day 2, September 17, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1rUmOgTKLrt3P5wn9Xz36SwJMooPq4m2m&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1rUmOgTKLrt3P5wn9Xz36SwJMooPq4m2m&amp;sz=w600" alt="Day 2, September 17, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1PKEJgx__6ewC9_u8WYn1JUlvyWVvaEpe&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1PKEJgx__6ewC9_u8WYn1JUlvyWVvaEpe&amp;sz=w600" alt="Day 2, September 17, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1Y2e612a2Wiyt5R2zp0cfcpgQXcVFUYH1&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1Y2e612a2Wiyt5R2zp0cfcpgQXcVFUYH1&amp;sz=w600" alt="Day 2, September 17, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1k7W6cHII8fW-9_Lr1bcxryNBRr9sArnk&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1k7W6cHII8fW-9_Lr1bcxryNBRr9sArnk&amp;sz=w600" alt="Day 2, September 17, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure></div></div>
+    <div class="field reflection"><h4>Weekly Reflection</h4>
+      <p class="fill">[What did you learn? What surprised or challenged you? How will this shape the way you teach?]</p></div>
+  </div>
+</details>
+<details class="week" id="week-2">
+  <summary><span class="wk-n">Week 2</span><span class="wk-d">September 21–24, 2026</span></summary>
+  <div class="week-body">
+    <div class="field"><h4>Learning Objectives</h4>
+      <ul><li class="fill">[What you aimed to learn or accomplish this week]</li><li class="fill">[Second objective]</li></ul></div>
+    <div class="field"><h4>Classroom Observations (Field Study 1)</h4>
+      <p class="fill">[Describe what you observed: teaching strategies, classroom management, learner behavior, materials used.]</p></div>
+    <div class="field"><h4>Participation and Assigned Tasks (Field Study 2)</h4>
+      <p class="fill">[Describe the tasks you were assigned and how you took part in class.]</p></div>
+    <div class="field"><h4>Learning Evidences</h4>
+      <ul class="evidence"><li><a href="assets/week-2/evidence-1.pdf">[Evidence 1: lesson plan, observation note, worksheet]</a></li><li><a href="assets/week-2/evidence-2.pdf">[Evidence 2]</a></li></ul></div>
+    <div class="field"><h4>Photo Documentation with Captions</h4>
+      <h5 class="day">Day 3 · September 21, 2026</h5><div class="shots dense"><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1qYMSiAz3xhWv_7PwEIpxpVG43RK_fOgm&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1qYMSiAz3xhWv_7PwEIpxpVG43RK_fOgm&amp;sz=w600" alt="Day 3, September 21, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1YwKQec8Xxu9oUptos89X4WyNvShDrSFk&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1YwKQec8Xxu9oUptos89X4WyNvShDrSFk&amp;sz=w600" alt="Day 3, September 21, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1G2-bU2FArSVDCHoZ1kMhKRXzqEethFBn&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1G2-bU2FArSVDCHoZ1kMhKRXzqEethFBn&amp;sz=w600" alt="Day 3, September 21, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1u2K0NlxJBnJzyEdJLTurFdpEIbawaFxO&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1u2K0NlxJBnJzyEdJLTurFdpEIbawaFxO&amp;sz=w600" alt="Day 3, September 21, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1f7lW6F2Eg_Q7pe19DlI4qvqvWpCd2UH4&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1f7lW6F2Eg_Q7pe19DlI4qvqvWpCd2UH4&amp;sz=w600" alt="Day 3, September 21, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure></div><h5 class="day">Day 4 · September 22, 2026</h5><div class="shots dense"><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1cZm8_9VDZDy_UX1mJc_E_5zM4hIxBzgY&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1cZm8_9VDZDy_UX1mJc_E_5zM4hIxBzgY&amp;sz=w600" alt="Day 4, September 22, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1-AuhRhtXZtv_5xUoLVwEbwi00X4ZwcpK&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1-AuhRhtXZtv_5xUoLVwEbwi00X4ZwcpK&amp;sz=w600" alt="Day 4, September 22, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1PD3X19Hp0BrO_yPalnv4N9JTxvILgko5&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1PD3X19Hp0BrO_yPalnv4N9JTxvILgko5&amp;sz=w600" alt="Day 4, September 22, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1jTZdd4mqL7OS3Eej4eCRsHO1eyxsvTwO&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1jTZdd4mqL7OS3Eej4eCRsHO1eyxsvTwO&amp;sz=w600" alt="Day 4, September 22, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1v-xgwSnI-M9L2elnC9pPZ74nAST6B19E&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1v-xgwSnI-M9L2elnC9pPZ74nAST6B19E&amp;sz=w600" alt="Day 4, September 22, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1cWn3Hz0JGvxJmND6FiBFhu4lFpnUfMlv&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1cWn3Hz0JGvxJmND6FiBFhu4lFpnUfMlv&amp;sz=w600" alt="Day 4, September 22, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=18SyRPJj7nE-2BBdqQntq8MVaESbGZsED&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=18SyRPJj7nE-2BBdqQntq8MVaESbGZsED&amp;sz=w600" alt="Day 4, September 22, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1V018spkVvLuAwgoXdG985AmZ6loHpo8r&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1V018spkVvLuAwgoXdG985AmZ6loHpo8r&amp;sz=w600" alt="Day 4, September 22, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=103qS7EFRNmeSuqFwFoTp4lGWU4_nFIix&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=103qS7EFRNmeSuqFwFoTp4lGWU4_nFIix&amp;sz=w600" alt="Day 4, September 22, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1v74H3l6nkl_LrpI6SfxR3N-5kPNSof5I&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1v74H3l6nkl_LrpI6SfxR3N-5kPNSof5I&amp;sz=w600" alt="Day 4, September 22, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=12-OO40qwSB4vj-2kzqt_ZwlxK7bm8RR5&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=12-OO40qwSB4vj-2kzqt_ZwlxK7bm8RR5&amp;sz=w600" alt="Day 4, September 22, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1N1csftxuNbG1YEDkZQA1Hk7zUHeZUWA6&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1N1csftxuNbG1YEDkZQA1Hk7zUHeZUWA6&amp;sz=w600" alt="Day 4, September 22, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1aLycAvyksQRdJr0DBAitCFT_nzGMMZgs&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1aLycAvyksQRdJr0DBAitCFT_nzGMMZgs&amp;sz=w600" alt="Day 4, September 22, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1WcgMR-XpBYUAa-8XyzPSuFINqbREo4WZ&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1WcgMR-XpBYUAa-8XyzPSuFINqbREo4WZ&amp;sz=w600" alt="Day 4, September 22, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1lX0fWn3DyMK_xDazPn7u6lZZ2nDG8sgc&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1lX0fWn3DyMK_xDazPn7u6lZZ2nDG8sgc&amp;sz=w600" alt="Day 4, September 22, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1PrmQzADh-_-IXTDzWRBzF-D8EGXYDaHQ&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1PrmQzADh-_-IXTDzWRBzF-D8EGXYDaHQ&amp;sz=w600" alt="Day 4, September 22, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1nr1czSfyWvnrIc177CMBZ6xzoTncN8ho&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1nr1czSfyWvnrIc177CMBZ6xzoTncN8ho&amp;sz=w600" alt="Day 4, September 22, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1UhSmZxTX7eP1SRFRtfjFJGfKT0MpsHYB&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1UhSmZxTX7eP1SRFRtfjFJGfKT0MpsHYB&amp;sz=w600" alt="Day 4, September 22, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1mYmoDMsdn9y9sjqZBV4z5RKwh7JOqt2x&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1mYmoDMsdn9y9sjqZBV4z5RKwh7JOqt2x&amp;sz=w600" alt="Day 4, September 22, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1jTVjJOD-9UcumOq8bEqV3FGZqWuKWd17&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1jTVjJOD-9UcumOq8bEqV3FGZqWuKWd17&amp;sz=w600" alt="Day 4, September 22, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1oKVwFm9A96iUGSbEFcFpe4WIOw0BiM6k&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1oKVwFm9A96iUGSbEFcFpe4WIOw0BiM6k&amp;sz=w600" alt="Day 4, September 22, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure></div><h5 class="day">Day 5 · September 23, 2026</h5><div class="shots dense"><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1lXwNUFdK6BOTRAKUlcf_qdYE0b5pFE9c&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1lXwNUFdK6BOTRAKUlcf_qdYE0b5pFE9c&amp;sz=w600" alt="Day 5, September 23, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1Hq4U5JTs_kdxIeLoGigO4hNMAMdK3lro&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1Hq4U5JTs_kdxIeLoGigO4hNMAMdK3lro&amp;sz=w600" alt="Day 5, September 23, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1u73yNFPUm1NNnPCVdLSSFieJMRfde9kz&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1u73yNFPUm1NNnPCVdLSSFieJMRfde9kz&amp;sz=w600" alt="Day 5, September 23, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=11LjwDXzInxRsTxBpVhx0UtwIDJgsWwqZ&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=11LjwDXzInxRsTxBpVhx0UtwIDJgsWwqZ&amp;sz=w600" alt="Day 5, September 23, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1nswt62yI2GGvRrREnRMmud6hYyKjqQ6g&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1nswt62yI2GGvRrREnRMmud6hYyKjqQ6g&amp;sz=w600" alt="Day 5, September 23, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1hMx-3IUglJxgXRusNpjrHbMzrFgmMDYB&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1hMx-3IUglJxgXRusNpjrHbMzrFgmMDYB&amp;sz=w600" alt="Day 5, September 23, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=19kHQ6NbdYrppAZKBf2vPA0sXP2TYt-0f&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=19kHQ6NbdYrppAZKBf2vPA0sXP2TYt-0f&amp;sz=w600" alt="Day 5, September 23, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1q-CYEnpdxMJcQSMVvLcEoZ4M9ZI7hy9i&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1q-CYEnpdxMJcQSMVvLcEoZ4M9ZI7hy9i&amp;sz=w600" alt="Day 5, September 23, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure></div><h5 class="day">Day 6 · September 24, 2026</h5><div class="shots dense"><figure class="shot"><a href="https://drive.google.com/thumbnail?id=14oipXtIuSOcYg6Zi7H7m4bm9EM-XgMzJ&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=14oipXtIuSOcYg6Zi7H7m4bm9EM-XgMzJ&amp;sz=w600" alt="Day 6, September 24, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1qVxYJJO0ysMOHZ2diIRaU-3xwLPl2Lqx&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1qVxYJJO0ysMOHZ2diIRaU-3xwLPl2Lqx&amp;sz=w600" alt="Day 6, September 24, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=19rcOZ3nDN9YnONy1ZlVJ5xphCkC746LB&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=19rcOZ3nDN9YnONy1ZlVJ5xphCkC746LB&amp;sz=w600" alt="Day 6, September 24, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1KzO90ZJT0REl6RWQ-PVOQegfmT859Lp8&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1KzO90ZJT0REl6RWQ-PVOQegfmT859Lp8&amp;sz=w600" alt="Day 6, September 24, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure></div></div>
+    <div class="field reflection"><h4>Weekly Reflection</h4>
+      <p class="fill">[What did you learn? What surprised or challenged you? How will this shape the way you teach?]</p></div>
+  </div>
+</details>
+<details class="week" id="week-3">
+  <summary><span class="wk-n">Week 3</span><span class="wk-d">September 28 – October 1, 2026</span></summary>
+  <div class="week-body">
+    <div class="field"><h4>Learning Objectives</h4>
+      <ul><li class="fill">[What you aimed to learn or accomplish this week]</li><li class="fill">[Second objective]</li></ul></div>
+    <div class="field"><h4>Classroom Observations (Field Study 1)</h4>
+      <p class="fill">[Describe what you observed: teaching strategies, classroom management, learner behavior, materials used.]</p></div>
+    <div class="field"><h4>Participation and Assigned Tasks (Field Study 2)</h4>
+      <p class="fill">[Describe the tasks you were assigned and how you took part in class.]</p></div>
+    <div class="field"><h4>Learning Evidences</h4>
+      <ul class="evidence"><li><a href="assets/week-3/evidence-1.pdf">[Evidence 1: lesson plan, observation note, worksheet]</a></li><li><a href="assets/week-3/evidence-2.pdf">[Evidence 2]</a></li></ul></div>
+    <div class="field"><h4>Photo Documentation with Captions</h4>
+      <h5 class="day">Day 7 · September 28, 2026</h5><div class="shots dense"><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1QzNH88U-CiPqbypYTdGeVU5EFJZSzZtb&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1QzNH88U-CiPqbypYTdGeVU5EFJZSzZtb&amp;sz=w600" alt="Day 7, September 28, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1EOQYuanaJC81hoFQODxTxaF8sfDNnFoT&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1EOQYuanaJC81hoFQODxTxaF8sfDNnFoT&amp;sz=w600" alt="Day 7, September 28, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure></div><h5 class="day">Day 8 · September 29, 2026</h5><div class="shots dense"><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1r6HyALOxgjV6LxGWmgeUnZ6zGYcEUJRZ&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1r6HyALOxgjV6LxGWmgeUnZ6zGYcEUJRZ&amp;sz=w600" alt="Day 8, September 29, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1JofSma4H9TMzn2WCsKYwDaeWuv4Suisx&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1JofSma4H9TMzn2WCsKYwDaeWuv4Suisx&amp;sz=w600" alt="Day 8, September 29, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1NhVhyHD3xVYwi46smmr4t7l6UBoOOQ-9&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1NhVhyHD3xVYwi46smmr4t7l6UBoOOQ-9&amp;sz=w600" alt="Day 8, September 29, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure></div><h5 class="day">Day 9 · September 30, 2026</h5><div class="shots dense"><figure class="shot"><a href="https://drive.google.com/thumbnail?id=13LQEg9Jzg6AkPj_94i0Iri45fp9wEX3z&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=13LQEg9Jzg6AkPj_94i0Iri45fp9wEX3z&amp;sz=w600" alt="Day 9, September 30, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1P6m46ij6nyVanQdlkF7MNhgRc4v96a2L&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1P6m46ij6nyVanQdlkF7MNhgRc4v96a2L&amp;sz=w600" alt="Day 9, September 30, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure></div><h5 class="day">Day 10 · October 1, 2026</h5><div class="shots dense"><figure class="shot"><a href="https://drive.google.com/thumbnail?id=102CwkAA0NJEit17F_WnUl7q8nE5YIaqj&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=102CwkAA0NJEit17F_WnUl7q8nE5YIaqj&amp;sz=w600" alt="Day 10, October 1, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1wMN8w9PzfYRUeSl80jY0D8c0Szn_Ikdu&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1wMN8w9PzfYRUeSl80jY0D8c0Szn_Ikdu&amp;sz=w600" alt="Day 10, October 1, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1lyHqAPqnKxsAqaCbd8tlN6ie6UjycHVY&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1lyHqAPqnKxsAqaCbd8tlN6ie6UjycHVY&amp;sz=w600" alt="Day 10, October 1, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure></div></div>
+    <div class="field reflection"><h4>Weekly Reflection</h4>
+      <p class="fill">[What did you learn? What surprised or challenged you? How will this shape the way you teach?]</p></div>
+  </div>
+</details>
+<details class="week" id="week-4">
+  <summary><span class="wk-n">Week 4</span><span class="wk-d">October 5–8, 2026</span></summary>
+  <div class="week-body">
+    <div class="field"><h4>Learning Objectives</h4>
+      <ul><li class="fill">[What you aimed to learn or accomplish this week]</li><li class="fill">[Second objective]</li></ul></div>
+    <div class="field"><h4>Classroom Observations (Field Study 1)</h4>
+      <p class="fill">[Describe what you observed: teaching strategies, classroom management, learner behavior, materials used.]</p></div>
+    <div class="field"><h4>Participation and Assigned Tasks (Field Study 2)</h4>
+      <p class="fill">[Describe the tasks you were assigned and how you took part in class.]</p></div>
+    <div class="field"><h4>Learning Evidences</h4>
+      <ul class="evidence"><li><a href="assets/week-4/evidence-1.pdf">[Evidence 1: lesson plan, observation note, worksheet]</a></li><li><a href="assets/week-4/evidence-2.pdf">[Evidence 2]</a></li></ul></div>
+    <div class="field"><h4>Photo Documentation with Captions</h4>
+      <h5 class="day">Day 11 · October 5, 2026</h5><div class="shots dense"><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1CThWGqKJglO_aPOebBH18Ytq5yC0dnEq&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1CThWGqKJglO_aPOebBH18Ytq5yC0dnEq&amp;sz=w600" alt="Day 11, October 5, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1vRbfrMzKbzbQH32xiTSnUfRZV6l8z3Ld&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1vRbfrMzKbzbQH32xiTSnUfRZV6l8z3Ld&amp;sz=w600" alt="Day 11, October 5, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1X1dTirf6_LYnOWM9VHdS2wye4uNpFagb&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1X1dTirf6_LYnOWM9VHdS2wye4uNpFagb&amp;sz=w600" alt="Day 11, October 5, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1nqfZXfLulLx39Ps4GaV9CD6x1ne_JEAh&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1nqfZXfLulLx39Ps4GaV9CD6x1ne_JEAh&amp;sz=w600" alt="Day 11, October 5, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1EvoNM3GntEqzb5spRe6Zbq4HWDxijjxu&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1EvoNM3GntEqzb5spRe6Zbq4HWDxijjxu&amp;sz=w600" alt="Day 11, October 5, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1mi2NtdgLUZBXHpoxLm2thdwH2sEopTO4&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1mi2NtdgLUZBXHpoxLm2thdwH2sEopTO4&amp;sz=w600" alt="Day 11, October 5, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=11lLahyxQUKtxPA7yyzo8-a5BbqAMV1Gq&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=11lLahyxQUKtxPA7yyzo8-a5BbqAMV1Gq&amp;sz=w600" alt="Day 11, October 5, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1cdr02DUuZUNClEYrfOGxDy6_ec6TYyhM&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1cdr02DUuZUNClEYrfOGxDy6_ec6TYyhM&amp;sz=w600" alt="Day 11, October 5, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=10xmWddPMY8ge7N6M4PZJnKx9P0aVtD_c&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=10xmWddPMY8ge7N6M4PZJnKx9P0aVtD_c&amp;sz=w600" alt="Day 11, October 5, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1tE1dLtJd23sdFnwYZ8iMELlelBvvXVrI&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1tE1dLtJd23sdFnwYZ8iMELlelBvvXVrI&amp;sz=w600" alt="Day 11, October 5, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1eSpQf1i9PLl5R95QX2ZUMWrawxw9Y4yY&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1eSpQf1i9PLl5R95QX2ZUMWrawxw9Y4yY&amp;sz=w600" alt="Day 11, October 5, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1D2aSXImp4Wh-i2yY5iFty7ZyclkgFPNh&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1D2aSXImp4Wh-i2yY5iFty7ZyclkgFPNh&amp;sz=w600" alt="Day 11, October 5, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1ozpru53W2l4QeT75VSEVSqwYW0Lt7hIx&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1ozpru53W2l4QeT75VSEVSqwYW0Lt7hIx&amp;sz=w600" alt="Day 11, October 5, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1vsnF868g_vVL7z_dkD_oXctq1VHwHwK7&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1vsnF868g_vVL7z_dkD_oXctq1VHwHwK7&amp;sz=w600" alt="Day 11, October 5, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1UA5FoVDy3jLxx5jfKqoL20wJda2ovNu3&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1UA5FoVDy3jLxx5jfKqoL20wJda2ovNu3&amp;sz=w600" alt="Day 11, October 5, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1vViwWqVnDtoOF3w5gCflKhjt0gEjYx1q&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1vViwWqVnDtoOF3w5gCflKhjt0gEjYx1q&amp;sz=w600" alt="Day 11, October 5, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure></div><h5 class="day">Day 12 · October 6, 2026</h5><div class="shots dense"><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1nM9lPty4QRa4sIILZACS-wWMHRmQAhPk&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1nM9lPty4QRa4sIILZACS-wWMHRmQAhPk&amp;sz=w600" alt="Day 12, October 6, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=171EtKMRqktm5ucVPdD26U4cUwXpOgkbj&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=171EtKMRqktm5ucVPdD26U4cUwXpOgkbj&amp;sz=w600" alt="Day 12, October 6, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1YYYH8tepW0uJW2tZbpitt6srgedjPqwx&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1YYYH8tepW0uJW2tZbpitt6srgedjPqwx&amp;sz=w600" alt="Day 12, October 6, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1zEtt1TburTQwzDCiuxbXtV9iZItPzeYn&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1zEtt1TburTQwzDCiuxbXtV9iZItPzeYn&amp;sz=w600" alt="Day 12, October 6, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1q_SztJT1u3eEv4TJw1KN0BhLJOP_bOHJ&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1q_SztJT1u3eEv4TJw1KN0BhLJOP_bOHJ&amp;sz=w600" alt="Day 12, October 6, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=10uTtTe46vN9pt46WnC5FsuOjL68w3f2_&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=10uTtTe46vN9pt46WnC5FsuOjL68w3f2_&amp;sz=w600" alt="Day 12, October 6, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1fxYHpp7IVu2-09Ihtu4SQSBF03jpEFgL&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1fxYHpp7IVu2-09Ihtu4SQSBF03jpEFgL&amp;sz=w600" alt="Day 12, October 6, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure></div><h5 class="day">Day 13 · October 7, 2026</h5><div class="shots dense"><figure class="shot"><a href="https://drive.google.com/thumbnail?id=16ohoeQBHTZhs4AzhZEJHoHtAKR2NnQWv&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=16ohoeQBHTZhs4AzhZEJHoHtAKR2NnQWv&amp;sz=w600" alt="Day 13, October 7, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1oPFLfbL7Y2yRdn5xDa29gTRzfpQtXHvA&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1oPFLfbL7Y2yRdn5xDa29gTRzfpQtXHvA&amp;sz=w600" alt="Day 13, October 7, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=10bw3OGqDlmhpbXGfN__F8oIBTVtFIcqy&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=10bw3OGqDlmhpbXGfN__F8oIBTVtFIcqy&amp;sz=w600" alt="Day 13, October 7, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1VC5LvwnV6y6P21j5vJRMi8Kh_TCW7mF4&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1VC5LvwnV6y6P21j5vJRMi8Kh_TCW7mF4&amp;sz=w600" alt="Day 13, October 7, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1-1_aP3gm1s9beyJbVMv-5jhq_gwrKSBe&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1-1_aP3gm1s9beyJbVMv-5jhq_gwrKSBe&amp;sz=w600" alt="Day 13, October 7, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1OvtvtFabDyZwbWZ-YooBnLrAxUBsOeB8&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1OvtvtFabDyZwbWZ-YooBnLrAxUBsOeB8&amp;sz=w600" alt="Day 13, October 7, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1fDwZFhWVghO8G20sImFAYJdTxtqpWGge&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1fDwZFhWVghO8G20sImFAYJdTxtqpWGge&amp;sz=w600" alt="Day 13, October 7, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1D4vU6S_QytgNlQ8ohP_LL4BL798k-1KE&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1D4vU6S_QytgNlQ8ohP_LL4BL798k-1KE&amp;sz=w600" alt="Day 13, October 7, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1-0D2VB3OkQDPZHwemBxwXiMbo2HgPmoB&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1-0D2VB3OkQDPZHwemBxwXiMbo2HgPmoB&amp;sz=w600" alt="Day 13, October 7, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1TIXseKgN9zQDeC8LCJvd9o2CrxjxUIFd&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1TIXseKgN9zQDeC8LCJvd9o2CrxjxUIFd&amp;sz=w600" alt="Day 13, October 7, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure></div><h5 class="day">Day 14 · October 8, 2026</h5><div class="shots dense"><figure class="shot"><a href="https://drive.google.com/thumbnail?id=11HLgbEAlb4zS7LVEnoy7LUImoUcaRPzg&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=11HLgbEAlb4zS7LVEnoy7LUImoUcaRPzg&amp;sz=w600" alt="Day 14, October 8, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1PQOQ1s4FbGSZUw0VY2Ly6MbWmlsf-Q6Y&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1PQOQ1s4FbGSZUw0VY2Ly6MbWmlsf-Q6Y&amp;sz=w600" alt="Day 14, October 8, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1-dRJp5eQsNLNz2SBONiBdzrn-6YraTMF&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1-dRJp5eQsNLNz2SBONiBdzrn-6YraTMF&amp;sz=w600" alt="Day 14, October 8, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1oR0WJCujnOkcg-_NZmpfYUFIuWaUdaDp&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1oR0WJCujnOkcg-_NZmpfYUFIuWaUdaDp&amp;sz=w600" alt="Day 14, October 8, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1odG_q37WrmeQKybBbJU1LY6pfuOmh5OT&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1odG_q37WrmeQKybBbJU1LY6pfuOmh5OT&amp;sz=w600" alt="Day 14, October 8, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1hGT0Zu4LEENpRv1IA2xCI7tvquT8n1He&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1hGT0Zu4LEENpRv1IA2xCI7tvquT8n1He&amp;sz=w600" alt="Day 14, October 8, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure></div></div>
+    <div class="field reflection"><h4>Weekly Reflection</h4>
+      <p class="fill">[What did you learn? What surprised or challenged you? How will this shape the way you teach?]</p></div>
+  </div>
+</details>
+<details class="week" id="week-5">
+  <summary><span class="wk-n">Week 5</span><span class="wk-d">October 12–15, 2026</span></summary>
+  <div class="week-body">
+    <div class="field"><h4>Learning Objectives</h4>
+      <ul><li class="fill">[What you aimed to learn or accomplish this week]</li><li class="fill">[Second objective]</li></ul></div>
+    <div class="field"><h4>Classroom Observations (Field Study 1)</h4>
+      <p class="fill">[Describe what you observed: teaching strategies, classroom management, learner behavior, materials used.]</p></div>
+    <div class="field"><h4>Participation and Assigned Tasks (Field Study 2)</h4>
+      <p class="fill">[Describe the tasks you were assigned and how you took part in class.]</p></div>
+    <div class="field"><h4>Learning Evidences</h4>
+      <ul class="evidence"><li><a href="assets/week-5/evidence-1.pdf">[Evidence 1: lesson plan, observation note, worksheet]</a></li><li><a href="assets/week-5/evidence-2.pdf">[Evidence 2]</a></li></ul></div>
+    <div class="field"><h4>Photo Documentation with Captions</h4>
+      <h5 class="day">Day 15 · October 12, 2026</h5><div class="shots dense"><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1Ft0ZWakGcImglAoqlkJfMQO1KFktG2dX&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1Ft0ZWakGcImglAoqlkJfMQO1KFktG2dX&amp;sz=w600" alt="Day 15, October 12, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1yD-uI5xfC9vYd2FKeI_CBdWBzxRQBapO&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1yD-uI5xfC9vYd2FKeI_CBdWBzxRQBapO&amp;sz=w600" alt="Day 15, October 12, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1JpG_DNC8yeoS-J6IqPoFLHe4Rb9_YCYr&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1JpG_DNC8yeoS-J6IqPoFLHe4Rb9_YCYr&amp;sz=w600" alt="Day 15, October 12, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1QKqF3oXPH2ZIzT2ueKAvuvDoVWEdpuqg&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1QKqF3oXPH2ZIzT2ueKAvuvDoVWEdpuqg&amp;sz=w600" alt="Day 15, October 12, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1-CftXpV7NMl8kxq5GOB-kxJX-Zy5Eoen&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1-CftXpV7NMl8kxq5GOB-kxJX-Zy5Eoen&amp;sz=w600" alt="Day 15, October 12, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1Mo0OrxXGCbEvMq0xyM51P1FZFRkG1rGl&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1Mo0OrxXGCbEvMq0xyM51P1FZFRkG1rGl&amp;sz=w600" alt="Day 15, October 12, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure></div><h5 class="day">Day 16 · October 13, 2026</h5><div class="shots dense"><figure class="shot"><a href="https://drive.google.com/thumbnail?id=10dCPBrYa5xbESkigAnsgNqJIxcgXiriZ&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=10dCPBrYa5xbESkigAnsgNqJIxcgXiriZ&amp;sz=w600" alt="Day 16, October 13, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1Cksl8I-qmYLtqRH3g8-CdLwlzACDH8Yx&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1Cksl8I-qmYLtqRH3g8-CdLwlzACDH8Yx&amp;sz=w600" alt="Day 16, October 13, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1ylqaRSXhmDn5C7KgJQLJKfguy51Ul3an&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1ylqaRSXhmDn5C7KgJQLJKfguy51Ul3an&amp;sz=w600" alt="Day 16, October 13, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1iXLhKF6Zo6e9sy_KaDalwG_DSHNxbBXQ&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1iXLhKF6Zo6e9sy_KaDalwG_DSHNxbBXQ&amp;sz=w600" alt="Day 16, October 13, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=13sQWVa9tVDBSmJjyNbAX4pIerZmOirLI&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=13sQWVa9tVDBSmJjyNbAX4pIerZmOirLI&amp;sz=w600" alt="Day 16, October 13, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=165NTp-yc7sufk83e_9KMWkz7qNpFnKDl&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=165NTp-yc7sufk83e_9KMWkz7qNpFnKDl&amp;sz=w600" alt="Day 16, October 13, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1U1CJdHFp_xsWKMsSLBOhFVuKWc2eV40K&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1U1CJdHFp_xsWKMsSLBOhFVuKWc2eV40K&amp;sz=w600" alt="Day 16, October 13, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=18-l1l76l2CgmKLIo_NSrE6tdtnPyzeUG&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=18-l1l76l2CgmKLIo_NSrE6tdtnPyzeUG&amp;sz=w600" alt="Day 16, October 13, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1drmnd_Qhy26Cdw4-OhOM7Q0nGRGJDqcZ&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1drmnd_Qhy26Cdw4-OhOM7Q0nGRGJDqcZ&amp;sz=w600" alt="Day 16, October 13, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=19-TUZEUgxiSFY1a7vVti6XmTmYmUTLTe&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=19-TUZEUgxiSFY1a7vVti6XmTmYmUTLTe&amp;sz=w600" alt="Day 16, October 13, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1y5dTBo2uJrzIdLYfaKic2I1hNj-ZubF_&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1y5dTBo2uJrzIdLYfaKic2I1hNj-ZubF_&amp;sz=w600" alt="Day 16, October 13, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1eWGheH19fMT8UcGDWGnk54GXawrt1LvJ&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1eWGheH19fMT8UcGDWGnk54GXawrt1LvJ&amp;sz=w600" alt="Day 16, October 13, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure></div><h5 class="day">Day 17 · October 14, 2026</h5><div class="shots dense"><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1MIRq53I4jNbsMvYDYg2CSwVqxVe98TqQ&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1MIRq53I4jNbsMvYDYg2CSwVqxVe98TqQ&amp;sz=w600" alt="Day 17, October 14, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1jkWSz67PriLblVkMOSfWXS7sBDYdsfon&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1jkWSz67PriLblVkMOSfWXS7sBDYdsfon&amp;sz=w600" alt="Day 17, October 14, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1IJPFXy58-p1FUGEKFFZ_kuYp9xUeH91J&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1IJPFXy58-p1FUGEKFFZ_kuYp9xUeH91J&amp;sz=w600" alt="Day 17, October 14, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1XFMzgTIdUnv9Jsg8C5F-rqmD1DcbGaD6&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1XFMzgTIdUnv9Jsg8C5F-rqmD1DcbGaD6&amp;sz=w600" alt="Day 17, October 14, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1H-gWuWSkyjsGcwuRgCqAhpqShQqB8IDr&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1H-gWuWSkyjsGcwuRgCqAhpqShQqB8IDr&amp;sz=w600" alt="Day 17, October 14, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=19t20yuPjKugWXQnmxFttCHOjujPtmZMm&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=19t20yuPjKugWXQnmxFttCHOjujPtmZMm&amp;sz=w600" alt="Day 17, October 14, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1H8RMkHQiOvWCJBODcIabJcTAPU1MILyR&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1H8RMkHQiOvWCJBODcIabJcTAPU1MILyR&amp;sz=w600" alt="Day 17, October 14, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure></div><h5 class="day">Day 18 · October 15, 2026</h5><div class="shots dense"><figure class="shot"><a href="https://drive.google.com/thumbnail?id=13zJesesrIrRvoJWEVX_Kv14gvKTf5hb6&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=13zJesesrIrRvoJWEVX_Kv14gvKTf5hb6&amp;sz=w600" alt="Day 18, October 15, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1oi3qhSahmd1Y6U5LJ9CSNuVVaU2unU8x&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1oi3qhSahmd1Y6U5LJ9CSNuVVaU2unU8x&amp;sz=w600" alt="Day 18, October 15, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1uWcuHzJKiREj8HPcJjsnMhX5fS0ybjGa&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1uWcuHzJKiREj8HPcJjsnMhX5fS0ybjGa&amp;sz=w600" alt="Day 18, October 15, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=15B7uLg8vLoss8ghkY_P2dcw6gNjSOfW9&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=15B7uLg8vLoss8ghkY_P2dcw6gNjSOfW9&amp;sz=w600" alt="Day 18, October 15, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1Z0ob6pBoHJwSZZTRalaIIQU52xYU6qXy&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1Z0ob6pBoHJwSZZTRalaIIQU52xYU6qXy&amp;sz=w600" alt="Day 18, October 15, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1ULhS9LHP269krXwZkxAtpmmW4EN0K0Bt&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1ULhS9LHP269krXwZkxAtpmmW4EN0K0Bt&amp;sz=w600" alt="Day 18, October 15, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1SCvWSW2oom48LaSqGwXqihU_tw1nLf1f&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1SCvWSW2oom48LaSqGwXqihU_tw1nLf1f&amp;sz=w600" alt="Day 18, October 15, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure></div></div>
+    <div class="field reflection"><h4>Weekly Reflection</h4>
+      <p class="fill">[What did you learn? What surprised or challenged you? How will this shape the way you teach?]</p></div>
+  </div>
+</details>
+<details class="week" id="week-6">
+  <summary><span class="wk-n">Week 6</span><span class="wk-d">October 19–22, 2026</span></summary>
+  <div class="week-body">
+    <div class="field"><h4>Learning Objectives</h4>
+      <ul><li class="fill">[What you aimed to learn or accomplish this week]</li><li class="fill">[Second objective]</li></ul></div>
+    <div class="field"><h4>Classroom Observations (Field Study 1)</h4>
+      <p class="fill">[Describe what you observed: teaching strategies, classroom management, learner behavior, materials used.]</p></div>
+    <div class="field"><h4>Participation and Assigned Tasks (Field Study 2)</h4>
+      <p class="fill">[Describe the tasks you were assigned and how you took part in class.]</p></div>
+    <div class="field"><h4>Learning Evidences</h4>
+      <ul class="evidence"><li><a href="assets/week-6/evidence-1.pdf">[Evidence 1: lesson plan, observation note, worksheet]</a></li><li><a href="assets/week-6/evidence-2.pdf">[Evidence 2]</a></li></ul></div>
+    <div class="field"><h4>Photo Documentation with Captions</h4>
+      <h5 class="day">Day 19 · October 19, 2026</h5><div class="shots dense"><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1xfqDJ_0D9RfM3z7JLbKq9GXFTXj9T6rM&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1xfqDJ_0D9RfM3z7JLbKq9GXFTXj9T6rM&amp;sz=w600" alt="Day 19, October 19, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1VReOyeppbnbcGdUkvezniEau7Y3NHx7d&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1VReOyeppbnbcGdUkvezniEau7Y3NHx7d&amp;sz=w600" alt="Day 19, October 19, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1k5At1MpkFgvhDT_GB_QcKBlbL6IGhKzx&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1k5At1MpkFgvhDT_GB_QcKBlbL6IGhKzx&amp;sz=w600" alt="Day 19, October 19, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1BWsfi1aa9kiWHJEcCGJDMC7cIWuBjVt7&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1BWsfi1aa9kiWHJEcCGJDMC7cIWuBjVt7&amp;sz=w600" alt="Day 19, October 19, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1QSSKtumaakuzHqWpaGRXH3EOUp4JLkYM&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1QSSKtumaakuzHqWpaGRXH3EOUp4JLkYM&amp;sz=w600" alt="Day 19, October 19, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1LzRFMeMWXTAPxLXBASldD64iKqiFWPLe&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1LzRFMeMWXTAPxLXBASldD64iKqiFWPLe&amp;sz=w600" alt="Day 19, October 19, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1h4Z6Virs9y5Yey1-rlXqfyZ7R3VWiD4Q&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1h4Z6Virs9y5Yey1-rlXqfyZ7R3VWiD4Q&amp;sz=w600" alt="Day 19, October 19, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1UWKeBlkC2yM8or50645xiS3oYalGrd8t&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1UWKeBlkC2yM8or50645xiS3oYalGrd8t&amp;sz=w600" alt="Day 19, October 19, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure></div><h5 class="day">Day 20 · October 20, 2026</h5><div class="shots dense"><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1FIJ_yKvvE-yrI-87xy5k7eBVzImdilAk&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1FIJ_yKvvE-yrI-87xy5k7eBVzImdilAk&amp;sz=w600" alt="Day 20, October 20, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1uJ4kaNTv-pjecVTr3NH4fIEvLjMjhrll&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1uJ4kaNTv-pjecVTr3NH4fIEvLjMjhrll&amp;sz=w600" alt="Day 20, October 20, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1bf-J7Z3xosbYk0bcTqv6zWEnZB1DRXZX&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1bf-J7Z3xosbYk0bcTqv6zWEnZB1DRXZX&amp;sz=w600" alt="Day 20, October 20, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1dJsHhQQCnfUQskH5I8_iy0VI3Kxr85Dc&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1dJsHhQQCnfUQskH5I8_iy0VI3Kxr85Dc&amp;sz=w600" alt="Day 20, October 20, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure></div><h5 class="day">Day 21 · October 21, 2026</h5><div class="shots dense"><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1_go5SSI-a_ygpMaH8qMgL1atx1PgJxX6&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1_go5SSI-a_ygpMaH8qMgL1atx1PgJxX6&amp;sz=w600" alt="Day 21, October 21, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1ZTqO2afODabYVIGWoU9ttkeMdhBUpiwT&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1ZTqO2afODabYVIGWoU9ttkeMdhBUpiwT&amp;sz=w600" alt="Day 21, October 21, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1QCJSVYHFvC7yntXKkupCFms3Z5qkOum3&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1QCJSVYHFvC7yntXKkupCFms3Z5qkOum3&amp;sz=w600" alt="Day 21, October 21, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1OlMTydT9ZVWu0Kz-VWFrMIS7aHU6OPsa&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1OlMTydT9ZVWu0Kz-VWFrMIS7aHU6OPsa&amp;sz=w600" alt="Day 21, October 21, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1cQPprAXCD_uN9aqTZzFnNGKbcwRDMrou&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1cQPprAXCD_uN9aqTZzFnNGKbcwRDMrou&amp;sz=w600" alt="Day 21, October 21, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1mvqevAU6kKcylxOmaaeh6KMqjdizF2k6&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1mvqevAU6kKcylxOmaaeh6KMqjdizF2k6&amp;sz=w600" alt="Day 21, October 21, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1qxLb1NKbwsZcDSCgDL8gbikGNBegfS9a&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1qxLb1NKbwsZcDSCgDL8gbikGNBegfS9a&amp;sz=w600" alt="Day 21, October 21, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1Bx8UaFVXup86Oqid6ev8OLZaIMEJX_n1&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1Bx8UaFVXup86Oqid6ev8OLZaIMEJX_n1&amp;sz=w600" alt="Day 21, October 21, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=15ZVlwF5MFgyQTEM4me2eb5014Jckh3h_&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=15ZVlwF5MFgyQTEM4me2eb5014Jckh3h_&amp;sz=w600" alt="Day 21, October 21, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=12Bh5VVcyRjMtmstHuZoXrBUWA6GdGucr&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=12Bh5VVcyRjMtmstHuZoXrBUWA6GdGucr&amp;sz=w600" alt="Day 21, October 21, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1kjgr6FtbA4avKRwgrk24ofEAwh0V64OS&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1kjgr6FtbA4avKRwgrk24ofEAwh0V64OS&amp;sz=w600" alt="Day 21, October 21, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure></div><h5 class="day">Day 22 · October 22, 2026</h5><div class="shots dense"><figure class="shot"><a href="https://drive.google.com/thumbnail?id=18nIGp5Pe1OxNWBsIXIk71OHw7fdBNff8&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=18nIGp5Pe1OxNWBsIXIk71OHw7fdBNff8&amp;sz=w600" alt="Day 22, October 22, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=10mzk7l7gyk9KR0tpR48-WCiabQkJX55D&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=10mzk7l7gyk9KR0tpR48-WCiabQkJX55D&amp;sz=w600" alt="Day 22, October 22, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1qQcQiU2BSD6Ayn9BqajFd6WMwxh4apeA&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1qQcQiU2BSD6Ayn9BqajFd6WMwxh4apeA&amp;sz=w600" alt="Day 22, October 22, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1o0IhD9U0AWiVn5Czi_vNMKz0VQzxWJLv&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1o0IhD9U0AWiVn5Czi_vNMKz0VQzxWJLv&amp;sz=w600" alt="Day 22, October 22, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1MCVCzZdUPzj2zHKaq9mEDLNXhbtbdbJA&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1MCVCzZdUPzj2zHKaq9mEDLNXhbtbdbJA&amp;sz=w600" alt="Day 22, October 22, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure></div></div>
+    <div class="field reflection"><h4>Weekly Reflection</h4>
+      <p class="fill">[What did you learn? What surprised or challenged you? How will this shape the way you teach?]</p></div>
+  </div>
+</details>
+<details class="week" id="week-7">
+  <summary><span class="wk-n">Week 7</span><span class="wk-d">October 26, 2026</span></summary>
+  <div class="week-body">
+    <div class="field"><h4>Learning Objectives</h4>
+      <ul><li class="fill">[What you aimed to learn or accomplish this week]</li><li class="fill">[Second objective]</li></ul></div>
+    <div class="field"><h4>Classroom Observations (Field Study 1)</h4>
+      <p class="fill">[Describe what you observed: teaching strategies, classroom management, learner behavior, materials used.]</p></div>
+    <div class="field"><h4>Participation and Assigned Tasks (Field Study 2)</h4>
+      <p class="fill">[Describe the tasks you were assigned and how you took part in class.]</p></div>
+    <div class="field"><h4>Learning Evidences</h4>
+      <ul class="evidence"><li><a href="assets/week-7/evidence-1.pdf">[Evidence 1: lesson plan, observation note, worksheet]</a></li><li><a href="assets/week-7/evidence-2.pdf">[Evidence 2]</a></li></ul></div>
+    <div class="field"><h4>Photo Documentation with Captions</h4>
+      <h5 class="day">Day 23 · October 26, 2026</h5><div class="shots dense"><figure class="shot"><a href="https://drive.google.com/thumbnail?id=14VifaIdMGpOKqyrky-JiX9MQSjBd4L-c&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=14VifaIdMGpOKqyrky-JiX9MQSjBd4L-c&amp;sz=w600" alt="Day 23, October 26, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1cp7WqcYZsNjzUzSjvKjcFafCvS3uHcVZ&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1cp7WqcYZsNjzUzSjvKjcFafCvS3uHcVZ&amp;sz=w600" alt="Day 23, October 26, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1KR1N0UvQJYUOIicfW95jnYzl5KH4z_46&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1KR1N0UvQJYUOIicfW95jnYzl5KH4z_46&amp;sz=w600" alt="Day 23, October 26, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1M-vG6Vep4fh77svD8zn1K0sHX5HDve0N&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1M-vG6Vep4fh77svD8zn1K0sHX5HDve0N&amp;sz=w600" alt="Day 23, October 26, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=18bgPwDxyn3Y7JbOMhny0Oho3ZLQgKEsE&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=18bgPwDxyn3Y7JbOMhny0Oho3ZLQgKEsE&amp;sz=w600" alt="Day 23, October 26, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1q4w6ObEgsVucUxqrb0SzmzLz6ff2tQEl&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1q4w6ObEgsVucUxqrb0SzmzLz6ff2tQEl&amp;sz=w600" alt="Day 23, October 26, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1JEHP4CgR8hYiyW9SfgZ_tCXw9QXaOY-o&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1JEHP4CgR8hYiyW9SfgZ_tCXw9QXaOY-o&amp;sz=w600" alt="Day 23, October 26, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1gYwT8R1301d8xFgcUKtbcxoy_CCTVu1v&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1gYwT8R1301d8xFgcUKtbcxoy_CCTVu1v&amp;sz=w600" alt="Day 23, October 26, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1HuVnQf-ACcmJqu2BaGefEjas5C5cD8uK&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1HuVnQf-ACcmJqu2BaGefEjas5C5cD8uK&amp;sz=w600" alt="Day 23, October 26, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1-_q63BtrfvAFzMABpBrxJl_Y1wGy2mDw&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1-_q63BtrfvAFzMABpBrxJl_Y1wGy2mDw&amp;sz=w600" alt="Day 23, October 26, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1i7ZrQqXDwS7EZjQGbLXg01zP6yUgRntS&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1i7ZrQqXDwS7EZjQGbLXg01zP6yUgRntS&amp;sz=w600" alt="Day 23, October 26, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/thumbnail?id=1YaDh9aQFFIE-Vg3L9TQDGwef06PDFg8k&amp;sz=w2000" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1YaDh9aQFFIE-Vg3L9TQDGwef06PDFg8k&amp;sz=w600" alt="Day 23, October 26, 2026" data-ph="Photo not loading. Check that the Drive folder is shared."></a><figcaption><span class="fill">[Add caption]</span></figcaption></figure></div></div>
+    <div class="field reflection"><h4>Weekly Reflection</h4>
+      <p class="fill">[What did you learn? What surprised or challenged you? How will this shape the way you teach?]</p></div>
+  </div>
+</details>
+</section>
+
+<!-- 6. PROFESSIONAL DEVELOPMENT AND ACTIVITIES -->
+<section id="activities">
+  <div class="sec-head"><span class="sec-no">6</span><h2>Professional Development and Activities</h2></div>
+  <p>Seminars, webinars, workshops, lecture series, conferences, mock board examinations, assemblies, extension programs, and other university or college events I took part in.</p>
+  
+<article class="entry">
+  <h3 class="fill">[Title of the Activity]</h3>
+  <dl class="meta"><div><dt>Date</dt><dd class="fill">[Month Day, Year]</dd></div></dl>
+  <div class="field"><h4>Brief Description</h4><p class="fill">[What the activity was, who organized it, and what was discussed or done.]</p></div>
+  <div class="field reflection"><h4>Reflection</h4><p class="fill">[What you took away and how it applies to your growth as a future teacher.]</p></div>
+  <div class="field"><h4>Photo Documentation</h4>
+    <div class="shots"><figure class="shot"><img src="assets/activities/activity-1-photo.jpg" alt="Activity 1 photo" data-ph="Add photo: assets/activities/activity-1-photo.jpg"><figcaption>[Caption]</figcaption></figure><figure class="shot"><img src="assets/activities/activity-1-certificate.jpg" alt="Activity 1 certificate" data-ph="Add photo: assets/activities/activity-1-certificate.jpg"><figcaption>Certificate of participation</figcaption></figure></div></div>
+</article>
+<article class="entry">
+  <h3 class="fill">[Title of the Activity]</h3>
+  <dl class="meta"><div><dt>Date</dt><dd class="fill">[Month Day, Year]</dd></div></dl>
+  <div class="field"><h4>Brief Description</h4><p class="fill">[What the activity was, who organized it, and what was discussed or done.]</p></div>
+  <div class="field reflection"><h4>Reflection</h4><p class="fill">[What you took away and how it applies to your growth as a future teacher.]</p></div>
+  <div class="field"><h4>Photo Documentation</h4>
+    <div class="shots"><figure class="shot"><img src="assets/activities/activity-2-photo.jpg" alt="Activity 2 photo" data-ph="Add photo: assets/activities/activity-2-photo.jpg"><figcaption>[Caption]</figcaption></figure><figure class="shot"><img src="assets/activities/activity-2-certificate.jpg" alt="Activity 2 certificate" data-ph="Add photo: assets/activities/activity-2-certificate.jpg"><figcaption>Certificate of participation</figcaption></figure></div></div>
+</article>
+<article class="entry">
+  <h3 class="fill">[Title of the Activity]</h3>
+  <dl class="meta"><div><dt>Date</dt><dd class="fill">[Month Day, Year]</dd></div></dl>
+  <div class="field"><h4>Brief Description</h4><p class="fill">[What the activity was, who organized it, and what was discussed or done.]</p></div>
+  <div class="field reflection"><h4>Reflection</h4><p class="fill">[What you took away and how it applies to your growth as a future teacher.]</p></div>
+  <div class="field"><h4>Photo Documentation</h4>
+    <div class="shots"><figure class="shot"><img src="assets/activities/activity-3-photo.jpg" alt="Activity 3 photo" data-ph="Add photo: assets/activities/activity-3-photo.jpg"><figcaption>[Caption]</figcaption></figure><figure class="shot"><img src="assets/activities/activity-3-certificate.jpg" alt="Activity 3 certificate" data-ph="Add photo: assets/activities/activity-3-certificate.jpg"><figcaption>Certificate of participation</figcaption></figure></div></div>
+</article>
+</section>
+
+<!-- 7. PROFESSIONAL GROWTH ACTION PLAN -->
+<section id="growth">
+  <div class="sec-head"><span class="sec-no">7</span><h2>Professional Growth Action Plan</h2></div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Area for Improvement</th><th>Action Plan</th><th>Expected Outcome</th><th>Timeline</th></tr></thead>
+      <tbody>
+        <tr><td class="fill">[e.g., Classroom management]</td><td class="fill">[What you will do about it]</td><td class="fill">[What will change]</td><td class="fill">[e.g., Next semester]</td></tr>
+        <tr><td class="fill">[Area 2]</td><td class="fill">[Action]</td><td class="fill">[Outcome]</td><td class="fill">[Timeline]</td></tr>
+        <tr><td class="fill">[Area 3]</td><td class="fill">[Action]</td><td class="fill">[Outcome]</td><td class="fill">[Timeline]</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- 8. APPENDICES -->
+<section id="appendices">
+  <div class="sec-head"><span class="sec-no">8</span><h2>Appendices</h2></div>
+  <p>Supporting documents. Each link opens the file from the <code>assets/appendices</code> folder.</p>
+  <ul class="docs">
+    <li><a href="assets/appendices/observation-forms.pdf">Observation Forms</a></li>
+    <li><a href="assets/appendices/attendance-records.pdf">Attendance Records</a></li>
+    <li><a href="assets/appendices/school-forms.pdf">School Forms<small>If permitted</small></a></li>
+    <li><a href="assets/appendices/endorsement-acceptance-letter.pdf">Endorsement or Acceptance Letter<small>If applicable</small></a></li>
+    <li><a href="assets/appendices/approved-schedule.pdf">Approved Class or Observation Schedule</a></li>
+    <li><a href="assets/appendices/field-notes.pdf">Observation Notes or Field Notes</a></li>
+    <li><a href="assets/appendices/feedback-evaluation-forms.pdf">Feedback or Evaluation Forms</a></li>
+    <li><a href="assets/appendices/consent-forms.pdf">Consent Forms<small>If applicable</small></a></li>
+  </ul>
+
+  <h3>Certificates and Recognitions</h3>
+  <p>Select a certificate to open the full document.</p>
+  <div class="shots dense certs"><figure class="shot"><a href="https://drive.google.com/file/d/14DMHLlmUeXpnNP4XbVOXB7lcKl6zYNh_/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=14DMHLlmUeXpnNP4XbVOXB7lcKl6zYNh_&amp;sz=w800" alt="Attendance Certificate 1" data-ph="Certificate not loading. Check that the Drive folder is shared."></a><figcaption><strong>Attendance Certificate 1</strong><br><span class="fill">[Title of the seminar or event, date]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/file/d/1oDvqg-NKG5WX6WwhqJJ5f5SHopH_PSpM/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1oDvqg-NKG5WX6WwhqJJ5f5SHopH_PSpM&amp;sz=w800" alt="Attendance Certificate 2" data-ph="Certificate not loading. Check that the Drive folder is shared."></a><figcaption><strong>Attendance Certificate 2</strong><br><span class="fill">[Title of the seminar or event, date]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/file/d/1GRFccDhLy4ScDqjtcfJNt3z4UV4barfN/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1GRFccDhLy4ScDqjtcfJNt3z4UV4barfN&amp;sz=w800" alt="Attendance Certificate 3" data-ph="Certificate not loading. Check that the Drive folder is shared."></a><figcaption><strong>Attendance Certificate 3</strong><br><span class="fill">[Title of the seminar or event, date]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/file/d/1qdcn_ZIAoP3Wjox_Bt6Y8o5Jj49bf_Ui/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1qdcn_ZIAoP3Wjox_Bt6Y8o5Jj49bf_Ui&amp;sz=w800" alt="Attendance Certificate 4" data-ph="Certificate not loading. Check that the Drive folder is shared."></a><figcaption><strong>Attendance Certificate 4</strong><br><span class="fill">[Title of the seminar or event, date]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/file/d/1lXJeVU-kzf14gJJlli-sKfc5sXhLWLj3/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1lXJeVU-kzf14gJJlli-sKfc5sXhLWLj3&amp;sz=w800" alt="Attendance Certificate 5" data-ph="Certificate not loading. Check that the Drive folder is shared."></a><figcaption><strong>Attendance Certificate 5</strong><br><span class="fill">[Title of the seminar or event, date]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/file/d/1PxpxWy4PFtUSxgknFUEwPFVr5fikK7oV/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1PxpxWy4PFtUSxgknFUEwPFVr5fikK7oV&amp;sz=w800" alt="Attendance Certificate 6" data-ph="Certificate not loading. Check that the Drive folder is shared."></a><figcaption><strong>Attendance Certificate 6</strong><br><span class="fill">[Title of the seminar or event, date]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/file/d/19ZLA2LARlt-hpKX4U52BmMnhTD5O5wQa/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=19ZLA2LARlt-hpKX4U52BmMnhTD5O5wQa&amp;sz=w800" alt="Certificate / Recognition 7" data-ph="Certificate not loading. Check that the Drive folder is shared."></a><figcaption><strong>Certificate / Recognition 7</strong><br><span class="fill">[Title of the seminar or event, date]</span></figcaption></figure><figure class="shot"><a href="https://drive.google.com/file/d/1UG3-sho0YrDlUG8OMh2vhC9ma3szA1a0/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1UG3-sho0YrDlUG8OMh2vhC9ma3szA1a0&amp;sz=w800" alt="Certificate / Recognition 8" data-ph="Certificate not loading. Check that the Drive folder is shared."></a><figcaption><strong>Certificate / Recognition 8</strong><br><span class="fill">[Title of the seminar or event, date]</span></figcaption></figure></div>
+</section>
+
+<section id="feedback">
+  <div class="sec-head"><span class="sec-no">★</span><h2>Feedback</h2></div>
+  <p>Kind words from the people who guided me. <!-- Replace each placeholder with a real quote from your feedback or evaluation forms. --></p>
+  <div class="quotes">
+    <div class="quote q1"><p class="fill">[Add a short feedback quote from your cooperating teacher]</p><b>Agape Grace D. Riveza</b><span>Cooperating Teacher</span></div>
+    <div class="quote q2"><p class="fill">[Add a short feedback quote from your field study adviser]</p><b>Joe J. Maniulit</b><span>Field Study Adviser</span></div>
+    <div class="quote q3"><p class="fill">[Add a short quote from a learner or classmate]</p><b class="fill">[Name]</b><span>[Role]</span></div>
+  </div>
+</section>
+
+<section class="cta-band" id="contact">
+  <h2>Thanks for walking through my journey!</h2>
+  <p>Want the full story? Read my CV or head back to the beginning.</p>
+  <div class="cta"><a class="btn btn-gold" href="https://drive.google.com/uc?export=download&amp;id=1WRsPFccnd29Hj1q-aVOppBoPZiw7UoGM">Download my CV</a><a class="btn" href="#journey">Back to the start</a></div>
+  <p style="margin-top:22px">Email: <span class="fill">[your email address]</span></p>
+</section>
+
+</main>
+
+<footer>
+  <strong>Princess Joy C. Nazareno</strong>
+  <p>Field Study 1 and Field Study 2 E-Portfolio</p>
+  <p>Taguig City University · College of Innovative Learning and Teaching</p>
+  <p>Gen. Santos Avenue, Central Bicutan, Taguig City · <a href="mailto:ced@tcu.edu.ph" style="color:var(--gold-light)">ced@tcu.edu.ph</a></p>
+</footer>
+
+<script>
+/* Open a week when a link points to it. */
+function openFromHash() {
+  var el = location.hash ? document.getElementById(location.hash.slice(1)) : null;
+  if (el && el.tagName === 'DETAILS') { el.open = true; }
+}
+window.addEventListener('hashchange', openFromHash);
+openFromHash();
+
+/* Show a dashed placeholder where a photo has not been added yet. */
+document.querySelectorAll('img').forEach(function (img) {
+  function onMissing() {
+    if (img.hasAttribute('data-hide')) { img.style.display = 'none'; return; }
+    var box = img.closest('.shot, .portrait');
+    if (!box) return;
+    box.classList.add('missing');
+    box.setAttribute('data-ph', img.getAttribute('data-ph') || 'Add photo');
+  }
+  img.addEventListener('error', onMissing);
+  if (img.complete && img.naturalWidth === 0) onMissing();
+});
+</script>
+</body>
+</html>
